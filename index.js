@@ -288,7 +288,7 @@ function getModelYears(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoById(array, number) {
-  return `The is a ${inventory[number-1].car_make} ${inventory[number-1].car_model}`
+  return `The is a ${array[number-1].car_make} ${array[number-1].car_model}`
 }
 
 /**
@@ -353,8 +353,9 @@ function getGermanCars(inventory) {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(/* code here */) {
-  /* code here */
+function carMaker(number) {
+  var  object1 = {odometer:number,drive:function(distance) {object1.odometer = object1.odometer+distance; return object1.odometer}};
+  return object1;
 }
 
 /// ////// END OF CHALLENGE /////////
