@@ -75,17 +75,16 @@ function temperatureCtoF(c) {
  * Hint: You can call your `temperatureCtoF` function from inside `temperatureInF`.
 */
 function temperatureInF(Number, unit) {
-  let valueF = "F";
-  let valueC = "C";
+  let valueF = 'F';
+  let valueC = 'C';
   
-  if (unit = "valueF") {
+  if (unit == valueF) {
     return `${Number}F`;
-  }
-  if (unit = "valueC") {
-    
-  let var1 = Math.round(Number*9/5 + 32);
-    return   `${var1}F`
-  }
+  };
+  if (unit == valueC) {
+    let var2 =temperatureCtoF(Number);
+    return   `${var2}F`;
+  };
 }
 
 
